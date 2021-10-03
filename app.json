@@ -1,32 +1,38 @@
 {
   "expo": {
-    "name": "athkary",
+    "name": "الذكر اليومي",
     "slug": "athkary",
-    "version": "1.0.0",
+    "version": "1.0.5",
+    
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
+    "icon": "./app/assets/icon.png",
+    
     "updates": {
       "fallbackToCacheTimeout": 0
     },
     "assetBundlePatterns": [
       "**/*"
     ],
+  
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier":"com.athkaryDaily.athkar",
+      "buildNumber":"1.0.9",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "تفعيل اللوكيشن للمساعدة على ضبط اوقات الصلاة "
+      }
     },
     "android": {
+      
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./app/assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./app/assets/favicon.png"
     }
+    
+    
   }
 }

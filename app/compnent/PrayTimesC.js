@@ -38,7 +38,16 @@ const styles = StyleSheet.create({
           borderWidth:0.5 ,
           height:"40%",
           width:"95%",
-          flexDirection:'row-reverse'
+          flexDirection:'row-reverse',
+          shadowColor: "#000",
+          shadowOffset: {
+            width: 0, // Horizontal shadow offset
+            height: 2, // Vertical shadow offset
+          },
+          shadowOpacity: 0.25, // Shadow opacity
+          shadowRadius: 3.84, // Shadow blur radius
+          // Android Shadow
+          elevation: 5, // Android elevation
           
         },
       

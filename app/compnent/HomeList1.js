@@ -41,6 +41,15 @@ const styles = StyleSheet.create({
     borderTopStartRadius:75,
     height:165,
     width:160,
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0, // Horizontal shadow offset
+      height: 2, // Vertical shadow offset
+    },
+    shadowOpacity: 0.25, // Shadow opacity
+    shadowRadius: 3.84, // Shadow blur radius
+    // Android Shadow
+    elevation: 5, // Android elevation
     
   },
 

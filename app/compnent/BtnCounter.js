@@ -40,6 +40,15 @@ const styles = StyleSheet.create({
     right:"2.1%",
     bottom:"14.7%",
     position:'absolute',
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0, // Horizontal shadow offset
+      height: 2, // Vertical shadow offset
+    },
+    shadowOpacity: 0.25, // Shadow opacity
+    shadowRadius: 3.84, // Shadow blur radius
+    // Android Shadow
+    elevation: 5, // Android elevation
 },
 //this is for Required Number 
   continer:{

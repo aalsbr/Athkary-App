@@ -13,6 +13,7 @@ import Fadl from "../screens/Home/Fadl";
 import { View, StyleSheet,Text, TouchableOpacity,Share } from 'react-native';
 import { MaterialCommunityIcons } from '@expo/vector-icons'; 
 import AboutHome from "../screens/Home/AboutHome";
+import QuaranParghraph from "../compnent/QuaranParghraph";
 
 
 
@@ -82,10 +83,16 @@ const FeedNavigator = ({navigation}) => (
    headerStyle:{backgroundColor:colors.barcollor},
    headerTitleStyle:{fontSize:22,color:colors.white},
    headerTintColor:colors.lightblue}}/>
-     <Stack.Screen name="Alkhf" component={Alkhf} options={{title:"سورة الكهف", 
+     <Stack.Screen name="Alkhf" component={Alkhf} options={{title:"القرآن الكريم", 
    headerStyle:{backgroundColor:colors.barcollor},
    headerTitleStyle:{fontSize:22,color:colors.white},
    headerTintColor:colors.lightblue}}/>
+
+   <Stack.Screen name="QuaranParghraph" component={QuaranParghraph} options={{
+   headerStyle:{backgroundColor:colors.barcollor},
+   headerTitleStyle:{fontSize:22,color:colors.white},
+   headerTintColor:colors.lightblue}}/>
+   
       <Stack.Screen name="Fadl" component={Fadl} options={{title:"فضل الأذكار ", 
    headerStyle:{backgroundColor:colors.barcollor},
    headerTitleStyle:{fontSize:22,color:colors.white},

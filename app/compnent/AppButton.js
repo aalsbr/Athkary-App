@@ -33,6 +33,15 @@ const styles = StyleSheet.create({
      right:"3%",
      width: "45%",
      height:60,
+     shadowColor: "#000",
+     shadowOffset: {
+       width: 0, // Horizontal shadow offset
+       height: 2, // Vertical shadow offset
+     },
+     shadowOpacity: 0.25, // Shadow opacity
+     shadowRadius: 3.84, // Shadow blur radius
+     // Android Shadow
+     elevation: 5, // Android elevation
  
 },
  //this is for the text inside the button 

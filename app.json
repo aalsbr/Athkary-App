@@ -1,38 +1,50 @@
 {
   "expo": {
     "name": "الذكر اليومي",
-    "slug": "athkary",
+    "slug": "daily-athkar",
     "version": "1.0.5",
-    
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "السماح للتطبيق باستخدام خدمات الموقع "
+        }
+      ]
+    ],
     "orientation": "portrait",
     "icon": "./app/assets/icon.png",
-    
     "updates": {
       "fallbackToCacheTimeout": 0
     },
     "assetBundlePatterns": [
       "**/*"
     ],
-  
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier":"com.athkaryDaily.athkar",
-      "buildNumber":"1.0.9",
+      "bundleIdentifier": "com.athkaryDaily.athkar",
+      "buildNumber": "1.0.9",
       "infoPlist": {
         "NSLocationWhenInUseUsageDescription": "تفعيل اللوكيشن للمساعدة على ضبط اوقات الصلاة "
       }
     },
     "android": {
-      
       "adaptiveIcon": {
         "foregroundImage": "./app/assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "permissions": [
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION"
+      ]
     },
     "web": {
       "favicon": "./app/assets/favicon.png"
-    }
-    
-    
+    },
+    "extra": {
+      "eas": {
+        "projectId": "4072dfca-e30b-4b2b-9e3f-80b9baa3b743"
+      }
+    },
+    "owner": "aalsbr"
   }
 }

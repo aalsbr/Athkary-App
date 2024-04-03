@@ -11,7 +11,7 @@ function AppNotify({ navigation }) {
     <View style={styles.container}>
      
 
-       <View style={{ marginVertical: "20%" }}></View>
+       <View style={{ marginVertical: "10%" }}></View>
        <View style={styles.textcontainer2}>
         <Text style={styles.text}>حول</Text>
       </View>
@@ -59,6 +59,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: colors.background,
+    
   },
   textcontainer: {
     position: "absolute",
@@ -67,7 +68,7 @@ const styles = StyleSheet.create({
   },
   textcontainer2: {
     position: "absolute",
-    top: "22%",
+    top: "8%",
     right: "4%",
   },
   text: {

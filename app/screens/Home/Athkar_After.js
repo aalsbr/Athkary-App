@@ -309,7 +309,8 @@ function Athkar_After(props) {
   }
   const styles = StyleSheet.create({
     container:{
-      backgroundColor:"#8dbbc7"
+      backgroundColor:"#8dbbc7",
+      
     },
     // This style is for السابق (back) button
     navBtn: {

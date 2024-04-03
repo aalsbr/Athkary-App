@@ -19,7 +19,8 @@ export default  function getlocation(navigation) {
     const [refresh, setrefresh] = useState(false);
     const getLocation = async () => {
       try {
-        const { granted } = await Location.requestPermissionsAsync();
+        const {granted}= await Location.requestForegroundPermissionsAsync();
+        console.log(granted)
         if (!granted) {
           Alert.alert(
             "اعدادات الموقع",
